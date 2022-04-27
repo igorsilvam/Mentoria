@@ -16,7 +16,7 @@
             <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
         </header>
 
-        <form id="page">
+        <form id="my-page">
             <fieldset>
                 <div class="titile-wrapper">
                     <legend>Informações pessoais</legend>
@@ -24,20 +24,20 @@
                 <div class="identity">
                     <div class="input-wrapper">
                         <label for="nam">Nome</label>
-                        <input type="text" id="nam">
+                        <input type="text" id="nam" required>
                     </div>
                     <div class="input-wrapper">
                         <label for="surname">Sobrenome</label>
-                        <input type="text" id="surname">
+                        <input type="text" id="surname" required>
                     </div>
                 </div>
                 <div class="input-wrapper">
                     <label for="mail">Email <span>(digite um email válido)</span></label>
-                    <input type="email" id="mail">
+                    <input type="email" id="mail" required>
                 </div>
                 <div class="input-wrapper">
                     <label for="pass">Senha <span>(mínimo de 6 caracteres)</span></label>
-                    <input type="password" id="pass">
+                    <input type="password" id="pass" required minlength="6">
                 </div>
             </fieldset>
             <fieldset>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="input-wrapper">
                     <label for="mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
-                    <input type="text" id="mentor">
+                    <input type="text" id="mentor" required>
                 </div>
             </fieldset>
             <fieldset>
@@ -57,28 +57,40 @@
                     <legend>Primeira mentoria</legend>
                 </div>
                 <div class="mentor-time">
-                    <label for="date">Data <span>(DD/MM/AAAA)</span></label>
-                    <input type="date" id="date">
-                    <label for="of">Das</label>
-                    <input type="time" id="of">
-                    <label for="at">Até</label>
-                    <input type="time" id="at">
+                    <div class="input-wrapper">
+                        <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="of">Das</label>
+                        <input type="time" id="of" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="at">Até</label>
+                        <input type="time" id="at" required>
+                    </div>
                 </div>
-                <div class="secondsubtititle-wrapper">
-                    <legend>Primeira mentoria</legend>
+                <div class="subtititle-wrapper">
+                    <legend>Segunda mentoria</legend>
                 </div>
                 <div class="mentor-time">
-                    <label for="second-date">Data <span>(DD/MM/AAAA)</span></label>
-                    <input type="date" id="second-date">
-                    <label for="second-of">Das</label>
-                    <input type="time" id="second-of">
-                    <label for="second-at">Até</label>
-                    <input type="time" id="second-at">
+                    <div class="input-wrapper">
+                        <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="of">Das</label>
+                        <input type="time" id="of" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="at">Até</label>
+                        <input type="time" id="at" required>
+                    </div>
                 </div>
             </fieldset>
         </form>
         <footer>
-            <button type="submit" form="page">salvar</button>
+            <button type="submit" form="my-page">salvar</button>
         </footer>
     </div>
 </body>
