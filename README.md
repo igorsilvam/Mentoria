@@ -14,7 +14,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto Mentoria foi um desafio proposto para treinar a prática em criar um formulário nele você pode agendar horário com um mentor , ele foi elaborado na aula do programa Explorer da Rocketseat.
 
-- [Página](https://igorsilvamedeiros.github.io/Mentoria/)
+- [Página](https://igorsilvam.github.io/Mentoria/)
 
 ## 🔖 Layout
 
